@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.han.user_managment">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_user_management"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_user_management"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".users_page"
+            android:label="User Page"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".User_detailInfo"
+            android:label="User Detail"
+            android:parentActivityName=".user_recyclerView"/>
+        <activity android:name=".user_recyclerView"
+            android:label="Users List Page"
+            android:parentActivityName=".users_page"/>
+        <activity android:name=".register"
+            android:label="Sign Up Page"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
